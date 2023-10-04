@@ -1,0 +1,8 @@
+P_Produto = float(input('Digite o Preço do produto R$: '))
+Desconto = float(input('Informe o desconto: '))
+Valor_D = (Desconto/100)
+N_Valor = P_Produto *(1-Valor_D)
+print('-'*50)
+print('RESULTADO FINAL')
+print('O produto com {}% de desconto terá o novo valor a pagar de R$ {:.2f}'.format(Valor_D, N_Valor))
+print('-'*50)

@@ -1,0 +1,6 @@
+Diaria_alg = float(input('Informe o valor da diária de locação: R$ '))
+V_KM = float(input('Informe o custo por KM rodado: R$ '))
+Locacao = int(input('Informe quantos dias de locação: '))
+L_KM = float(input('Informe a quilometragem utilizada na locação: '))
+T_Pagar = (Diaria_alg * Locacao) + (V_KM*L_KM)
+print('O valor total a pagar é de R$ {}'.format(T_Pagar))

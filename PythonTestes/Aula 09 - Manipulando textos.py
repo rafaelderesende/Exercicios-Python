@@ -1,0 +1,10 @@
+frase = 'Curso em vídeo Python'
+print(frase)
+print(frase[3])
+print(frase[3:13])
+print(frase[3:13:2])
+print(frase[:13])
+print(frase[13:])
+print(frase[3::3])
+print(frase.find('Curso'))
+print(len(frase))

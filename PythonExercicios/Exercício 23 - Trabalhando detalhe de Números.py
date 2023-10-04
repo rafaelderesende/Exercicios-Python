@@ -1,0 +1,7 @@
+num = int(input('Digite um número entre 0 e 9999: '))
+sep = str(num)
+print('Analisando o número {}'.format(num))
+print('Unidade: {}'.format(sep[3]))
+print('Dezena: {}'.format(sep[2]))
+print('Centena: {}'.format(sep[1]))
+print('Milhar: {}'.format(sep[0]))

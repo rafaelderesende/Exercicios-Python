@@ -1,0 +1,8 @@
+Salário = float(input('Digite o salario atual do funcionário R$: '))
+Aumento = float(input('Informe o percentual de aumento: '))
+Valor_A = (Aumento/100)
+N_Valor = Salário *(1+Valor_A)
+print('-'*50)
+print('RESULTADO FINAL')
+print('O novo salário do funcionário com reajuste de {}% será de R$ {:.2f}'.format(Valor_A, N_Valor))
+print('-'*50)
