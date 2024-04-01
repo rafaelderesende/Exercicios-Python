@@ -1,0 +1,16 @@
+Ano = int(input('Digite o seu Ano de Nascimento: '))
+ano_atual = 2023
+Id_Alistamento = 18
+Id_Candidato = ano_atual - Ano
+if Id_Candidato == Id_Alistamento:
+    print(' Sua idade é de {} anos. Você está no ano atual para o alistamento militar!'.format(Id_Candidato))
+elif Id_Candidato < Id_Alistamento:
+    diferença = Id_Alistamento - Id_Candidato
+    print('Sua idade é de {} anos. Ainda faltam {} anos para o seu ailistamento militar!'.format(Id_Candidato,diferença))
+else:
+    superior = Id_Candidato - Id_Alistamento
+    print('Sua idade é de {} anos. Você já passou {} anos da idade de alistamento. Procure o serviço militar com urgência!'.format(Id_Candidato,superior))
+
+    
+
+

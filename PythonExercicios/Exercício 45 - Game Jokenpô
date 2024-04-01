@@ -1,0 +1,21 @@
+from random import randint
+
+lista = ('Pedra', 'Papel', 'Tesoura')
+
+print('+='*10)
+print('GAME JOKENPÔ')
+print('=+'*10)
+print('''Escolha sua Opção:
+      [0] Pedra
+      [1] Papel
+      [2] Tesoura''')
+usuario = input('Sua Jogada: ')
+comp = randint(0, 2)
+print(lista[comp])
+print(lista[usuario])
+
+
+
+
+
+

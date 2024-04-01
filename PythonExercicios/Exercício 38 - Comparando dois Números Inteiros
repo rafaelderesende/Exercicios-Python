@@ -1,0 +1,9 @@
+N1 = int(input("Digite um número inteiro: "))
+N2 = int(input("Digite um novo número inteiro: "))
+if N1 > N2:
+    print('O primeiro número digitado {} é maior que o segundo digitado {}'.format(N1,N2))
+elif N1 < N2:
+    print('O primeiro número digitado {} é menor que o segundo número digitado {}'.format(N1,N2))
+else:
+    print('Não há número maior. Ambos possuem o mesmo valor {} e {}.'.format(N1,N2))
+    

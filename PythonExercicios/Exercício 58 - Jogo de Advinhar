@@ -1,0 +1,23 @@
+
+cont = 0
+from random import randint
+pc_num = randint(0,10)
+print('--+'*12)
+print('JOGO DA ADIVINHAÇÃO')
+print('--+'*12)
+print('Olá sou seu computador. Pensei em um número entre 1 e 10')
+correto = False
+while not correto:
+    usu = int(input('Digite o seu Palpite: '))
+    cont = cont + 1
+    if usu == pc_num:
+        correto = True
+    else:
+        if usu < pc_num:
+            print('Quase..! O número que escolhi é maior que {}. Digite Novamente: '.format(usu))
+        elif usu > pc_num:
+            print('Não foi dessa vez...! O número que escolhi é menor que {}'.format(usu))
+print('Parabéns! Você acertou o número que eu escolhi depois de {} tentativas'.format(cont))
+print('--+'*20)
+print('OBRIGADO POR PARTICIPAR DO JOGO DA ADIVINHAÇÃO')
+print('--+'*20)

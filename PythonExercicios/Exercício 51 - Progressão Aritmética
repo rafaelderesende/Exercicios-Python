@@ -1,0 +1,8 @@
+Termo = int(input('Digite o Primeiro Termo: '))
+Razao = int(input('Digite a razão da P.A: ' ))
+decimo_termo = Termo + (10-1) * Razao
+for termo in range(Termo, decimo_termo + Razao, Razao):
+    print('{}'.format(termo), end=' -> ')
+print('CONCLUÍDO')
+    
+

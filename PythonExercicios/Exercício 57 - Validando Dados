@@ -1,0 +1,5 @@
+
+Orientsexual = str(input('Digite seu sexo: [M/F]: ')).strip().upper()[0]
+while Orientsexual not in 'MmFf':
+        Orientsexual = str(input('Dados Invalidos. Digite no formato indicado: [M/F]: ')).strip().upper()[0]
+print('Informação recebida com sucesso!')

@@ -1,0 +1,10 @@
+contador = 0 
+soma = 0
+
+for c in range(1 ,501, 2):
+    if c % 3 == 0:
+        contador = contador +1
+        soma =soma + contador
+print('A somatoria dos números multiplos de 3 é {}'.format(soma))
+print('FIM!!')
+

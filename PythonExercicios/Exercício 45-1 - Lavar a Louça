@@ -1,0 +1,19 @@
+from random import choice
+from time import sleep
+print('=+'*10)
+print('POLLY & RAFAs HOUSE')
+print('=+'*10)
+
+print('QUEM VAI LAVAR A LOUÇA HOJE???')
+
+lista = ('Rafael', 'Polliana', 'Priscilla', 'Miguel')
+comp = choice(lista)
+print('Escolhendo.....')
+sleep(5)
+print(comp)
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+contador = 10
+
+for contador in range(0,10):
+    print(contador)
+
+for saudação in range(0,10):
+    print('Olá')
+    print('tudo bem?')
+print('fim!')
+
+N = int(input('Digite um número: '))
+for c in range(N+1): 
+    print(c)
+
+i = int(input('Digite o início: '))
+f = int(input('Digite o fim: '))
+p = int(input('Digite o passo: '))
+for contagem in range(i, f+1, p):
+        print(contagem)
+print('Fim')
+
+s = 0
+for c in range(0, 4):
+     n = int(input('Digite um valor: '))
+     s += n
+print('O resultado da somatória é de {}'.format(s))
+print('Fim!')
+

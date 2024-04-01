@@ -1,0 +1,6 @@
+for c in range(1,6):
+    Peso = int(input('Digite o {}º Peso: '.format(c)))
+Menor_Peso = min(Peso)
+Maior_Peso = max(Peso)
+print('Dentro os pesos apresentados, o menor peso é {} e o maior peso é {}'.format(Menor_Peso, Maior_Peso))
+

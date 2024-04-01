@@ -1,0 +1,17 @@
+Idade = int(input('Informe sua idade: '))
+Mirim = 9
+Infantil = 14
+Junior = 19
+Senior = 25
+if Idade <= Mirim:
+    print('A idade de {} anos pertence a categoria MIRIM.'.format(Idade))
+elif Idade > Mirim and Idade <= Infantil:
+    print('A idade de {} anos pertence a categoria INFANTIL.'.format(Idade))
+elif Idade > Infantil and Idade <= Junior:
+    print('A idade de {} anos pertence a categoia JUNIOR.'.format(Idade))
+elif Idade > Junior and Idade <= Senior:
+    print(' A idade de {} anos pertence a categoria SENIOR.'.format(Idade))
+else:
+    print(' A idade de {} anos pertence a categoria MASTER.'.format(Idade))
+    
+

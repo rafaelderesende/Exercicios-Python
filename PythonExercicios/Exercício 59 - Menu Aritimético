@@ -1,0 +1,49 @@
+print('+-*/'* 6)
+print('MENU DA ARITIMÉTICA')
+print('+-*/'* 6)
+
+
+
+sair = False
+while not sair:
+    N1 = int(input('Digite o primeiro número: '))
+    N2 = int(input('Digite o segundo número: '))
+
+    lista = ('SOMA', 'SUBTRAÇÃO', 'MULTIPLICAÇÃO', 'DIVISÃO', 'MÉDIA', 'SAIR DO PROGRAMA')
+    Operação = int(input(''' Opções abaixo: 
+        [0] SOMA
+        [1] SUBTRAÇÃO
+        [2] MULTIPLICAÇÃO
+        [3] DIVISÃO
+        [4] MÉDIA
+        [5] SAIR DO PROGRAMA
+        Esolha qual a opção acima que gostaria de executar:   
+        '''))
+
+    print('Você escolheu a opção: {}.'.format(lista[Operação]))
+
+
+    soma = N1 + N2
+    subtração = N1 - N2
+    multiplicação = N1 * N2
+    Divisão = N1 / N2
+    media = (N1 + N2) / 2
+
+    if lista[Operação] == 'SOMA':
+        print('O resultado da soma é {}.'.format(soma))
+    elif lista[Operação] == 'SUBTRAÇÃO':
+        print('O resultado da subtração é {}.'.format(subtração))
+    elif lista[Operação] == 'MULTIPLICAÇÃO':
+        print('O resultado da miltiplicação é {}.'.format(multiplicação))
+    elif lista[Operação] == 'DIVISÃO':
+        print('O resultado da divisão é {}.'.format(Divisão))
+    elif lista[Operação] == 'MÉDIA':
+        print('O resultado da média dos números é {}'.format(media))
+    elif lista[Operação] == 'SAIR DO PROGRAMA':
+         sair = True
+    else:
+        print('Opção {} Invalida. Por favor tente novamente.'.format(lista[Operação]))
+print('Grato por sua participação!')
+    
+
+

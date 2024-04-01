@@ -1,0 +1,26 @@
+valor_produto = float(input('Informe o valor total da compra R$: '))
+print('''Escolha a forma de pagamento:
+      [1] - Cheque
+      [2] - à vista no cartão
+      [3] - 2x prazo no cartão
+      [4] - 3x no Cartão''')
+opcao = int(input('Escolha sua opção: '))
+
+cheque = valor_produto - (valor_produto * 0.10)
+a_vista_cartao = valor_produto - (valor_produto * 0.5)
+tres_cartao = (valor_produto + (valor_produto * 0.20))/3
+
+if opcao == 1:
+    print('Obrigado! Nesta opção, você terá 10% por cento de desconto. O valor a ser pago é de R$ {:.2f}'.format(cheque))
+elif opcao == 2:
+    print('Obrigado! Nesta opção, você terá 5% por cento de desconto. O valor a ser pago é de R$ {:.2f}'.format(a_vista_cartao))
+elif opcao == 3:
+    print('Obrigado! Nesta opção, O valor a ser pago é de R$ {:.2f}'.format(valor_produto / 2))
+elif opcao == 4:
+    print('Obrigado! Nesta opção, você terá um acréscimo de 20%. O valor a ser pago é de R$ {:.2f} em 3 vezes'.format(tres_cartao))
+else:
+    print('Opção Invalida!. Por favor escolha uma das opções apresentadas.')
+
+    
+
+

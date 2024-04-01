@@ -1,0 +1,18 @@
+Peso = float(input('Digite o seu peso (KG): '))
+Altura = float(input(' Digite sua altura (m): '))
+IMC = Peso / (Altura ** 2)
+Abaixo_Peso = 18.5
+Peso_Ideal = 25
+Sobrepeso = 30
+Obesidade = 40
+if IMC <= Abaixo_Peso:
+    print('O peso de {} e a altura de {} indicam um IMC de {:.2f}. ABAIXO DO PESO.'.format(Peso,Altura,IMC))
+elif IMC <= Peso_Ideal:
+    print('O peso de {} e a altura de {} indicam um IMC de {:.2f}. PESO IDEAL.'.format(Peso,Altura,IMC))
+elif IMC <= Sobrepeso:
+    print('O peso de {} e a altura de {} indicam um IMC de {:.2f}. SOBREPESO.'.format(Peso,Altura,IMC))
+elif IMC <= Obesidade:
+    print('O peso de {} e a altura de {} indicam um IMC de {:.2f}. OBESIDADE.'.format(Peso,Altura,IMC))
+else:
+    print('O peso de {} e a altura de {} indicam um IMC de {:.2f}. OBESIDADE MORBIDA.'.format(Peso,Altura,IMC))
+    
